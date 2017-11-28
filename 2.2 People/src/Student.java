@@ -11,12 +11,11 @@ public class Student extends Person
 		this.grade = grade;
 		this.school = school;
 	}
+	
 	public double getGPA() {
 		return GPA;
 	}
-	public void setGPA(double gPA) {
-		GPA = gPA;
-	}
+	
 	public int getGrade() {
 		return grade;
 	}
@@ -24,9 +23,7 @@ public class Student extends Person
 	public String getSchool() {
 		return school;
 	}
-	public void setSchool(String school) {
-		this.school = school;
-	}
+
 	@Override
 	public String toString() {
 		return "Student - Family Name:" + getFamilyName() + "First Name:" + getFirstName();
