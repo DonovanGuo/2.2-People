@@ -10,25 +10,30 @@ public class Classroom
 	}
 	public String getSubject()
 	{
-			return ((Teacher)teacher).getSubject();
+		if(this.teacher instanceof Teacher)
+		{
+			return ((Teacher)this.teacher).getSubject();
+		}
+		return null;
 	}
 	
 	public double classAverage()
 	{
 		double ClassGpa = 0;
-		for(int i = 0; i < student.length; i++)
+		for(int i = 0; i < this.student.length; i++)
 		{
-			ClassGpa = ClassGpa + ((Student)student[i]).getGPA();
+			ClassGpa = ClassGpa + ((Student)this.student[i]).getGPA();
 		}
-		return ClassGpa / student.length;
+		return ClassGpa / this.student.length;
 	}
 	public String printClass()
 	{	 
-		String totalClassstud = "" + ((Teacher)teacher).toString();
-		for(int i =0; i < student.length; i++)
+		String totalClassstud = ((Teacher)this.teacher).toString();
+		for(int i =0; i < this.student.length; i++)
 		{
-			totalClassstud += "/n" ((Student)student[i]).toString();  
+			totalClassstud += "/n" + ((Student)this.student[i]).toString();  
 		}
+		return totalClassstud;
 	}
 }
 

@@ -13,15 +13,15 @@ public class Student extends Person
 	}
 	
 	public double getGPA() {
-		return GPA;
+		return this.GPA;
 	}
 	
 	public int getGrade() {
-		return grade;
+		return this.grade;
 	}
 	
 	public String getSchool() {
-		return school;
+		return this.school;
 	}
 
 	@Override

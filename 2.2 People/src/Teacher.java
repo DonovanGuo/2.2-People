@@ -12,12 +12,12 @@ public class Teacher extends Person
 	}
 
 	public String getSubject() {
-		return subject;
+		return this.subject;
 	}
 
 	@Override
 	public String toString() {
-		return "Teacher:" + Title + getFamilyName() + ".";
+		return "Teacher:" + this.Title + getFamilyName() + ".";
 	}
 	
 
