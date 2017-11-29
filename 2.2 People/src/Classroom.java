@@ -18,16 +18,16 @@ public class Classroom
 		double ClassGpa = 0;
 		for(int i = 0; i < student.length; i++)
 		{
-			
 			ClassGpa = ClassGpa + ((Student)student[i]).getGPA();
 		}
 		return ClassGpa / student.length;
 	}
 	public String printClass()
-	{	 String totalClassstud = "";
+	{	 
+		String totalClassstud = "" + ((Teacher)teacher).toString();
 		for(int i =0; i < student.length; i++)
 		{
-			totalClassstud += "/n" (())  
+			totalClassstud += "/n" ((Student)student[i]).toString();  
 		}
 	}
 }
