@@ -10,7 +10,7 @@ public class Runner
 	static String[] school;
 	public static void main(String[] args)
 	{
-		Person teacher;
+		Person teacher new Teacher();
 		Person[] student = new Person[10];
 		Classroom classroom = new Classroom(student, teacher);
 		
@@ -19,8 +19,15 @@ public class Runner
 	public Person randomStudent()
 	{
 		Random r = new Random();
-		Student student = new Student(firstNames[r.nextInt(firstNames.length)], familyNames[r.nextInt(familyNames.length)],  );
+		String ranfirstname = firstNames[r.nextInt(firstNames.length)];
+		String ranfamilyname = familyNames[r.nextInt(familyNames.length)];
+		
+		Student student = new Student();
 		return student;
+	}
+	public String ranbrithdate()
+	{
+		
 	}
 
 }
