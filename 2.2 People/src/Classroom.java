@@ -28,10 +28,12 @@ public class Classroom
 	}
 	public String printClass()
 	{	 
-		String totalClassstud = ((Teacher)this.teacher).toString();
-		for(int i =0; i < this.student.length; i++)
+		String totalClassstud = ((Teacher)this.teacher).toString() +
+					" \nSubject: " + ((Teacher)this.teacher).getSubject() +
+					" \nStudents in class:";
+		for(int i = 0; i < this.student.length; i++)
 		{
-			totalClassstud += "/n" + ((Student)this.student[i]).toString();  
+			totalClassstud += "\n" + ((Student)this.student[i]).toString();  
 		}
 		return totalClassstud;
 	}
